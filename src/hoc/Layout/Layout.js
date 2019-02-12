@@ -17,6 +17,7 @@ const Layout = (props) => {
 			<ParallaxImage image={Background}>
 				<>
 					<h1 className={classes.IntroText}>Jorge Baralt</h1>
+					{/* TODO: on press move to main class */}
 					<DownArrow
 						className={classes.FlashArrow}
 						size="60px"
