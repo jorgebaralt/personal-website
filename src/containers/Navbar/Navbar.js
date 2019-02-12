@@ -1,14 +1,27 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import classes from './Navbar.module.css';
 
-class Navbar extends React.Component {
-	render() {
-		return (
-			<>
-				<p>Navbar goes here</p>
-			</>
-		);
-	}
-}
+const Navbar = (props) => {
+	return (
+		<header className={classes.TransparentNavbar}>
+			<div
+				style={{
+					fontSize: 25,
+					fontWeight: '400',
+					color: 'white',
+				}}
+			>
+				LOGO HERE
+			</div>
+			{/* Check what to render, according to screen size */}
+			<div className={classes.NavbarItems}>
+				<a href="#">Profile</a>
+				<a href="#">Projects</a>
+				<a href="#">Skills</a>
+				<a href="#">Education</a>
+			</div>
+		</header>
+	);
+};
 
-export default withRouter(Navbar);
+export default Navbar;

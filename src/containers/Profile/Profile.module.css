@@ -1,0 +1,22 @@
+.ProfileContainer {
+	padding: 30px;
+	position: relative;
+	background-color: white;
+}
+
+.Title {
+	margin-top: 50px;
+	font-size: 50px;
+	font-weight: 400;
+	text-align: center;
+	font-family: monospace;
+}
+
+.Subtitle {
+	margin-top: 30px;
+	font-size: 20px;
+	font-weight: 100;
+	text-align: center;
+	font-family: monospace;
+	color: #424242;
+}
