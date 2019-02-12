@@ -1,3 +1,67 @@
 .Container {
 	background-color: white;
+	height: 1000px;
+	position: relative;
+}
+
+.SkillContainer {
+	position: absolute;
+	border: 0.5px solid #e0e0e0;
+	border-radius: 8px;
+	margin: auto;
+	color: black;
+	margin: auto;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	top: -100px;
+	background-color: white;
+	left: 0;
+	right: 0;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.Skill {
+	width: 33%;
+	overflow: hidden;
+}
+
+.Skill:not(:last-child) {
+	border-right: 0.5px solid #e0e0e0;
+}
+
+.SkillTitle {
+	margin: 0;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.SkillDescription {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 100;
+	margin-top: 15px;
+	height: 60px;
+}
+
+.ToolTitle {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 100;
+	margin-top: 15px;
+	color: #1565c0;
+	margin-top: 5;
+}
+.ToolsContainer {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.Tool {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 100;
+	margin-top: 5px;
 }

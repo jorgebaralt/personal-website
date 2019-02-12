@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	background-color: white;
+	/* Relative cuz we have paralax on same page, otherwise we dont need it */
 	position: relative;
 }
 

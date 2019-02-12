@@ -41,16 +41,16 @@
 
 .SmartPhone {
 	position: absolute;
-	left: 0;
+	left: -50px;
 	bottom: 0;
 	z-index: 1;
 }
 
 .Circle {
 	position: absolute;
-	height: 500px;
-	width: 500px;
-	border-radius: 250px;
+	height: 450px;
+	width: 450px;
+	border-radius: 275px;
 	background-image: linear-gradient(to bottom, #1565c0, #1565c0);
 	z-index: 0;
 	bottom: -300px;

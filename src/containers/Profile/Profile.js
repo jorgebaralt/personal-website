@@ -18,9 +18,10 @@ const Profile = () => {
 					src={ProfilePic}
 					alt="profile pic"
 				/>
+				<div style={{ height: 100 }} />
 				<SmartPhone size={400} className={classes.SmartPhone} />
 				<div className={classes.Circle}>
-					<Code size={200} className={classes.Code} />
+					<Code size={170} className={classes.Code} />
 				</div>
 			</div>
 		</>
