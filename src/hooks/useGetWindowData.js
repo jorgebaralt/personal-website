@@ -4,9 +4,10 @@
 */
 import { useState, useEffect } from 'react';
 
-const useGetScreenSize = () => {
+const useGetWindowData = () => {
 	const [width, setWidth] = useState(window.innerWidth);
 	const [height, setHeight] = useState(window.innerHeight);
+	const [scrollY, setScrollY] = useState(window.scrollY);
 
 	// on mount, add window event listener for screen change
 	useEffect(() => {
@@ -14,12 +15,16 @@ const useGetScreenSize = () => {
 			setWidth(window.innerWidth);
 			setHeight(window.innerHeight);
 		});
+		window.addEventListener('scroll', () => {
+			setScrollY(window.scrollY);
+		});
 		return function cleanup() {
 			window.removeEventListener('resize');
+			window.removeEventListener('scroll');
 		};
 	}, []);
 
-	return { width, height };
+	return { width, height, scrollY };
 };
 
-export default useGetScreenSize;
+export default useGetWindowData;

@@ -11,3 +11,16 @@
 	font-weight: 500;
 	margin: 0px;
 }
+
+.FlashArrow {
+	animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

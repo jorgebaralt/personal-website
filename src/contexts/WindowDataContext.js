@@ -7,19 +7,19 @@
 import React from 'react';
 // Hooks
 import useIsMobile from '../hooks/useIsMobile';
-import useGetScreenSize from '../hooks/useGetScreenSize';
+import useGetWindowData from '../hooks/useGetWindowData';
 
 const Context = React.createContext();
 
-export const ScreenSizeStore = (props) => {
+export const WindowDataStore = (props) => {
 	// check if the device is a mobile phone, to apply pollyfil
 	const isMobile = useIsMobile();
 	// get the size of the screen
-	const { width, height } = useGetScreenSize();
+	const { width, height, scrollY } = useGetWindowData();
 
 	//return context
 	return (
-		<Context.Provider value={{ isMobile, width, height }}>
+		<Context.Provider value={{ isMobile, width, height, scrollY }}>
 			{props.children}
 		</Context.Provider>
 	);
