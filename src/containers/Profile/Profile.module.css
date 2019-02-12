@@ -1,7 +1,13 @@
 .ProfileContainer {
-	padding: 30px;
 	position: relative;
 	background-color: white;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .Title {
@@ -10,13 +16,49 @@
 	font-weight: 400;
 	text-align: center;
 	font-family: monospace;
+	z-index: 5;
 }
 
 .Subtitle {
-	margin-top: 30px;
-	font-size: 20px;
+	margin-top: 10px;
+	font-size: 22px;
 	font-weight: 100;
 	text-align: center;
 	font-family: monospace;
 	color: #424242;
+	width: 70%;
+	z-index: 5;
+}
+
+.ProfilePic {
+	width: 250px;
+	height: 250px;
+	border-radius: 125px;
+	margin-top: 20px;
+	/* display: block; */
+	z-index: 5;
+}
+
+.SmartPhone {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.Circle {
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	border-radius: 250px;
+	background-image: linear-gradient(to bottom, #1565c0, #1565c0);
+	z-index: 0;
+	bottom: -300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Code {
+	margin-bottom: 250px;
 }

@@ -22,8 +22,8 @@ const Navbar = (props) => {
 			{/* Check what to render, according to screen size */}
 			<div className={classes.NavbarItemsTransparent}>
 				<a href="#">Profile</a>
-				<a href="#">Projects</a>
 				<a href="#">Skills</a>
+				<a href="#">Projects</a>
 				<a href="#">Education</a>
 			</div>
 		</header>

@@ -1,7 +1,7 @@
 .TransparentNavbar {
 	height: 70px;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	z-index: 25;
 	box-sizing: border-box;
@@ -16,7 +16,7 @@
 }
 
 .RegularNavbar {
-	background-color: rgb(13, 71, 161, 0.95);
+	background-color: rgb(0, 0, 0, 0.85);
 	transition: background-color 0.4s;
 }
 

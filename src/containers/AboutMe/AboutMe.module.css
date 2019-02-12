@@ -1,0 +1,27 @@
+.AboutMeContainer {
+	background-image: linear-gradient(to bottom, #1565c0, #0d47a1);
+	/* linear-gradient(#0d47a1, black); */
+	margin: 0;
+	color: white;
+	min-height: 600px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.Title {
+	margin: 0;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.Text {
+	font-family: 'Roboto', sans-serif;
+	margin-left: 80px;
+	margin-right: 80px;
+	font-weight: 100;
+	font-size: 22px;
+	line-height: 1.5em;
+	padding-bottom: 200px;
+}
