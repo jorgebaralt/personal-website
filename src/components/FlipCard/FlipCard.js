@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './FlipCard.module.css';
-
+/* 
+	receives front and back JSX to render anything
+*/
 const FlipCard = (props) => {
 	return (
 		<div className={classes.FlipContainer}>

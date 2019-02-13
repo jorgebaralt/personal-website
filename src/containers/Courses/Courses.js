@@ -3,12 +3,6 @@ import classes from './Courses.module.css';
 import FlipCard from '../../components/FlipCard/FlipCard';
 import courses from '../../shared/courses';
 
-// const front = (
-// 	<div>
-// 		<img src="" alt="" />
-// 	</div>
-// );
-// const back = <div>Back</div>;
 const renderCourseDescription = (course) => {
 	if (course.description) {
 		const descriptions = course.description.split('*');
