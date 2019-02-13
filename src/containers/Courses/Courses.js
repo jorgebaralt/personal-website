@@ -19,7 +19,7 @@ const renderCourses = () => {
 	return courses.map((course, i) => {
 		return (
 			<div key={i} className={classes.Course}>
-				<div style={{ padding: 20 }}>
+				<div style={{ padding: 40 }}>
 					<FlipCard
 						front={
 							<div className={classes.Card}>
