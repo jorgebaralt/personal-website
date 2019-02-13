@@ -7,7 +7,7 @@ const courses = [
 		image:
 			'https://udemy-images.udemy.com/course/240x135/919872_ed54_6.jpg',
 		description:
-			' Learned android basics and framework * Reviewed java programming * Reviewed databases and web services * implemented powerful libraries',
+			' Learned android basics and framework * Reviewed java programming * Reviewed databases and web services * Retrofit to connect to API',
 	},
 	{
 		id: 2,

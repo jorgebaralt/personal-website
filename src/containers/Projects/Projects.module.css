@@ -1,0 +1,84 @@
+.Container {
+	background-image: linear-gradient(to bottom, #1565c0, #2196f3);
+	/* linear-gradient(#0d47a1, black); */
+	margin: 0;
+	color: white;
+	min-height: 400px;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+.Title {
+	margin: 0;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.Text {
+	font-family: 'Roboto', sans-serif;
+	margin-left: 80px;
+	margin-right: 80px;
+	font-weight: 100;
+	font-size: 22px;
+	line-height: 1.5em;
+	padding-bottom: 200px;
+	margin-bottom: 0;
+	width: 50%;
+	align-self: center;
+}
+
+.ProjectContainer {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-height: 400px;
+	background-color: transparent;
+	width: 60%;
+	top: -150px;
+	border-radius: 5px;
+	margin: auto;
+}
+
+.Project {
+	width: 47%;
+	text-align: center;
+	padding: 1.5%;
+}
+
+.Front {
+	position: relative;
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+.FrontImg {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	background-size: cover;
+	opacity: 0.6;
+}
+
+.ImgText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	width: 100%;
+}
+
+.Back {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #293347;
+	width: 100%;
+	color: white;
+}

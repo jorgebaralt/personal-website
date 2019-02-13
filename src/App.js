@@ -5,6 +5,7 @@ import Profile from './containers/Profile/Profile';
 import AboutMe from './containers/AboutMe/AboutMe';
 import Skills from './containers/Skills/Skills';
 import Courses from './containers/Courses/Courses';
+import Projects from './containers/Projects/Projects';
 
 class App extends Component {
 	render() {
@@ -14,6 +15,7 @@ class App extends Component {
 				<AboutMe />
 				<Skills />
 				<Courses />
+				<Projects />
 			</Layout>
 		);
 	}

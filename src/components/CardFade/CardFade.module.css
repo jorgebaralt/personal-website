@@ -1,0 +1,33 @@
+.Card {
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+	background-color: black;
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+p {
+	margin: 0;
+}
+
+/* Change according to css wanted per project */
+.Visible {
+	opacity: 1;
+	transform: scale(1);
+	transition: all 0.4s;
+}
+
+.NotVisible {
+	opacity: 0;
+	transform: scale(1.5);
+	transition: all 0.4s;
+}
+
+.Content {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+}

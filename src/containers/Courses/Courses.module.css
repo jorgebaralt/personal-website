@@ -16,12 +16,14 @@
 	flex-wrap: wrap;
 	flex-direction: row;
 	margin-top: 40px;
-	margin-left: 80px;
-	margin-right: 80px;
+	margin-left: 120px;
+	margin-right: 120px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .Course {
-	width: 25%;
+	width: 33%;
 	text-align: center;
 }
 
@@ -36,19 +38,23 @@
 
 .CardImage {
 	width: 100%;
-	height: 50%;
+	height: 65%;
 	object-fit: cover;
 }
 
 .CardTitle {
 	font-size: 16px;
+	font-weight: 600;
+	margin: 10px;
 }
 
-.BackColor {
-	background-image: linear-gradient(#1565c0, #0d47a1);
+.CardBack {
+	background-color: #293347;
 }
 
-.White {
+.BackTitle {
+	font-size: 22px;
+	margin: 10px;
 	color: white;
 }
 
@@ -56,5 +62,36 @@
 	color: white;
 	text-align: left;
 	margin-left: 10px;
-	font-size: 16px;
+	font-size: 18px;
+	padding: 5px;
+	font-weight: 100;
+	font-family: 'Roboto', sans-serif;
+}
+
+.Hover {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.Hover p {
+	margin: 0;
+	margin-left: 5px;
+}
+p,
+h5 {
+	margin: 0;
+}
+
+p {
+	margin: 5px;
+}
+
+.Divline {
+	height: 1px;
+	width: 100%;
+	background-color: #e0e0e0;
 }

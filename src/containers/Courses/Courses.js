@@ -15,11 +15,11 @@ const renderCourseDescription = (course) => {
 };
 
 const renderCourses = () => {
-	const cardBackClass = [classes.Card, classes.BackColor].join(' ');
+	const cardBackClass = [classes.Card, classes.CardBack].join(' ');
 	return courses.map((course, i) => {
 		return (
 			<div key={i} className={classes.Course}>
-				<div style={{ padding: 40 }}>
+				<div style={{ padding: 60 }}>
 					<FlipCard
 						front={
 							<div className={classes.Card}>
@@ -33,16 +33,15 @@ const renderCourses = () => {
 								</h5>
 								<p>{course.instructor}</p>
 								<p>{course.progress}</p>
+								<div className={classes.Hover}>
+									<i className="fas fa-info-circle" />
+									<p>Hover for more info</p>
+								</div>
 							</div>
 						}
 						back={
 							<div className={cardBackClass}>
-								<h5
-									className={[
-										classes.CardTitle,
-										classes.White,
-									].join(' ')}
-								>
+								<h5 className={classes.BackTitle}>
 									{course.name}
 								</h5>
 								{renderCourseDescription(course)}

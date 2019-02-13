@@ -1,10 +1,12 @@
 .AboutMeContainer {
-	background-image: linear-gradient(to bottom, #1565c0, #0d47a1);
+	background-image: linear-gradient(to bottom, #1565c0, #2196f3);
 	/* linear-gradient(#0d47a1, black); */
 	margin: 0;
 	color: white;
 	min-height: 500px;
 	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
 }
 
 .Title {
@@ -25,4 +27,7 @@
 	line-height: 1.5em;
 	padding-bottom: 200px;
 	margin-bottom: 0;
+	width: 50%;
+	align-self: center;
+	margin-left: 25%;
 }
