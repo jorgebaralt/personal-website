@@ -14,7 +14,7 @@ const Skills = () => {
 							Mobile Development
 						</h5>
 						<p className={classes.SkillDescription}>
-							I love bringing to life any idea.
+							I love bringing ideas to life.
 						</p>
 						<p className={subtitleClass.join(' ')}>
 							Tools & Skills

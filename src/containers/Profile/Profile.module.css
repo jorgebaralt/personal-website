@@ -6,7 +6,6 @@
 	/* justify-content: center; */
 	align-items: center;
 	margin: 0;
-	height: 100vh;
 	overflow: hidden;
 }
 
@@ -39,6 +38,7 @@
 	z-index: 5;
 }
 
+/* hide in smaller screens */
 .SmartPhone {
 	position: absolute;
 	left: -50px;
@@ -47,18 +47,19 @@
 }
 
 .Circle {
-	position: absolute;
-	height: 450px;
-	width: 450px;
-	border-radius: 275px;
+	position: relative;
+	height: 350px;
+	width: 350px;
+	border-radius: 175px;
 	background-image: linear-gradient(to bottom, #1565c0, #1565c0);
 	z-index: 0;
-	bottom: -300px;
+	bottom: -170px;
+	align-self: flex-end;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .Code {
-	margin-bottom: 250px;
+	margin-bottom: 125px;
 }

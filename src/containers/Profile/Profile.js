@@ -18,8 +18,9 @@ const Profile = () => {
 					src={ProfilePic}
 					alt="profile pic"
 				/>
-				<div style={{ height: 100 }} />
+				{/* <div style={{ height: 100 }} /> */}
 				<SmartPhone size={400} className={classes.SmartPhone} />
+				{/* TODO: Move to next component */}
 				<div className={classes.Circle}>
 					<Code size={170} className={classes.Code} />
 				</div>
