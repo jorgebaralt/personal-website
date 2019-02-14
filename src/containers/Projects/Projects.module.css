@@ -7,6 +7,7 @@
 	font-family: 'Roboto', sans-serif;
 	display: flex;
 	flex-direction: column;
+	margin-top: 100px;
 }
 
 .Title {
@@ -76,9 +77,28 @@
 
 .Back {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: #293347;
 	width: 100%;
 	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	letter-spacing: 0.08em;
+}
+
+.Back h3 {
+	font-weight: 100;
+}
+
+.Resources {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.Resource {
+	margin-left: 10px;
+	cursor: pointer;
 }

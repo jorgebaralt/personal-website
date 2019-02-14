@@ -2,9 +2,11 @@ import React from 'react';
 import classes from './Projects.module.css';
 // components
 import CardFade from '../../components/CardFade/CardFade';
-// Assets
-
+import Button from '../../components/Button/Button';
+// data
 import projects from '../../shared/projects';
+// SVG
+import { Youtube, PlayStore, AppStore, Github } from '../../assets/SVG';
 
 const renderProjects = () => {
 	return projects.map((project) => {
@@ -25,7 +27,71 @@ const renderProjects = () => {
 					}
 					back={
 						<div className={classes.Back}>
-							<p>Back</p>
+							<h3>{project.name}</h3>
+							<p style={{ width: '80%' }}>
+								{project.description}
+							</p>
+
+							{project.website ? (
+								<Button
+									color="primary"
+									style={{ marginTop: 20 }}
+									onClick={() =>
+										window.open(project.website, '_blank')
+									}
+								>
+									<p>
+										Website{' '}
+										<i
+											style={{ marginLeft: 10 }}
+											className="fas fa-angle-right"
+										/>
+									</p>
+								</Button>
+							) : null}
+							<div className={classes.Resources}>
+								{project.ios ? (
+									<AppStore
+										onClick={() =>
+											window.open(project.ios, '_blank')
+										}
+										className={classes.Resource}
+									/>
+								) : null}
+								{project.android ? (
+									<PlayStore
+										onClick={() =>
+											window.open(
+												project.android,
+												'_blank'
+											)
+										}
+										className={classes.Resource}
+									/>
+								) : null}
+								{project.youtube ? (
+									<Youtube
+										onClick={() =>
+											window.open(
+												project.youtube,
+												'_blank'
+											)
+										}
+										className={classes.Resource}
+									/>
+								) : null}
+								{project.github ? (
+									<Github
+										onClick={() =>
+											window.open(
+												project.github,
+												'_blank'
+											)
+										}
+										className={classes.Resource}
+									/>
+								) : null}
+							</div>
 						</div>
 					}
 				/>

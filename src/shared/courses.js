@@ -36,7 +36,7 @@ const courses = [
 		progress: ' Completed - 100%',
 		image: 'https://udemy-images.udemy.com/course/240x135/892102_963b.jpg',
 		description:
-			'Basics of iOS programming and Swift * Objective C vs Swift * Building full stack apps with Firebase',
+			'Basics of iOS programming and Swift * Objective C vs Swift * Building full stack apps with Firebase * Storyboard design * MVC pattern * SwiftyJSON & Alamofire* Chamaleon framework for styling',
 	},
 	{
 		id: 5,

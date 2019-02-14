@@ -4,3 +4,8 @@ export * from './Code';
 export * from './Phone';
 export * from './Web';
 export * from './BackEnd';
+export * from './Youtube';
+export * from './Linkedin';
+export * from './Github';
+export * from './AppStore';
+export * from './PlayStore';

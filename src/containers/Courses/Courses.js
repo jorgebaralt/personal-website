@@ -19,36 +19,30 @@ const renderCourses = () => {
 	return courses.map((course, i) => {
 		return (
 			<div key={i} className={classes.Course}>
-				<div style={{ padding: 60 }}>
-					<FlipCard
-						front={
-							<div className={classes.Card}>
-								<img
-									className={classes.CardImage}
-									src={course.image}
-									alt=""
-								/>
-								<h5 className={classes.CardTitle}>
-									{course.name}
-								</h5>
-								<p>{course.instructor}</p>
-								<p>{course.progress}</p>
-								<div className={classes.Hover}>
-									<i className="fas fa-info-circle" />
-									<p>Hover for more info</p>
-								</div>
+				<FlipCard
+					front={
+						<div className={classes.Card}>
+							<img
+								className={classes.CardImage}
+								src={course.image}
+								alt=""
+							/>
+							<h5 className={classes.CardTitle}>{course.name}</h5>
+							<p>{course.instructor}</p>
+							<p>{course.progress}</p>
+							<div className={classes.Hover}>
+								<i className="fas fa-info-circle" />
+								<p>Hover for more info</p>
 							</div>
-						}
-						back={
-							<div className={cardBackClass}>
-								<h5 className={classes.BackTitle}>
-									{course.name}
-								</h5>
-								{renderCourseDescription(course)}
-							</div>
-						}
-					/>
-				</div>
+						</div>
+					}
+					back={
+						<div className={cardBackClass}>
+							<h5 className={classes.BackTitle}>{course.name}</h5>
+							{renderCourseDescription(course)}
+						</div>
+					}
+				/>
 			</div>
 		);
 	});

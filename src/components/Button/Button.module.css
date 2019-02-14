@@ -1,0 +1,27 @@
+.Button {
+	position: relative;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	padding-left: 20px;
+	padding-right: 20px;
+	font: inherit;
+	width: fit-content;
+	user-select: none;
+	border: 1px solid transparent;
+	border-radius: 40px;
+	line-height: 1.5;
+	transition: background-color 0.2s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+		opacity 0.15s;
+}
+
+.Primary {
+	color: white;
+	border-color: #1565c0;
+}
+
+.Primary:not([disabled]):hover {
+	background-color: #1565c0;
+}
