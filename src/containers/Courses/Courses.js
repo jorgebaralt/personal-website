@@ -50,7 +50,7 @@ const renderCourses = () => {
 
 const Courses = (props) => {
 	return (
-		<div>
+		<div id="courses">
 			<h1 className={classes.Title}>Courses</h1>
 			<p className={classes.Subtitle}>
 				Courses I have done on my free time

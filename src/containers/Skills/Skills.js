@@ -5,7 +5,7 @@ import { Phone, Web, BackEnd } from '../../assets/SVG';
 const Skills = () => {
 	const subtitleClass = [classes.ToolTitle];
 	return (
-		<div className={classes.Container}>
+		<div id="skills" className={classes.Container}>
 			<div className={classes.SkillContainer}>
 				<div className={classes.Skill}>
 					<div style={{ padding: 40 }}>

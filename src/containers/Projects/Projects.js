@@ -101,7 +101,7 @@ const renderProjects = () => {
 };
 const Projects = () => {
 	return (
-		<div>
+		<div id="projects">
 			<div className={classes.Container}>
 				<h1 className={classes.Title}>My Projects</h1>
 				<p className={classes.Text}>

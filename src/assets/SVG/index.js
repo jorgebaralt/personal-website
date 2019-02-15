@@ -9,3 +9,4 @@ export * from './Linkedin';
 export * from './Github';
 export * from './AppStore';
 export * from './PlayStore';
+export * from './Email';

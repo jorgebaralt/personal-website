@@ -6,7 +6,10 @@ import { useState, useEffect } from 'react';
 import { checkIsMobile } from '../shared/checkIsMobile';
 import smoothscroll from 'smoothscroll-polyfill';
 
-// TODO: pass function to apply as props, that way users can apply their own functions if it is mobiel
+/* 
+	TODO: pass function to apply as props, that way users can apply their own functions if it is mobile
+ */
+
 const useIsMobile = () => {
 	const [isMobile, setIsMobile] = useState(false);
 	useEffect(() => {
@@ -14,6 +17,7 @@ const useIsMobile = () => {
 		if (checkIsMobile()) {
 			smoothscroll.polyfill();
 			setIsMobile(true);
+			// TODO: Apply functions here
 		} else {
 			setIsMobile(false);
 		}

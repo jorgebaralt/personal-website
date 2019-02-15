@@ -18,7 +18,7 @@ const useGetWindowData = () => {
 		window.addEventListener('scroll', () => {
 			setScrollY(window.scrollY);
 		});
-		return function cleanup() {
+		return () => {
 			window.removeEventListener('resize');
 			window.removeEventListener('scroll');
 		};

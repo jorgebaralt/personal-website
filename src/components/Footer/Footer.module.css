@@ -1,0 +1,68 @@
+.Footer {
+	margin-top: 50px;
+	position: relative;
+	height: 500px;
+	background-image: linear-gradient(to bottom, #1565c0, #2196f3);
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.FloatingCard {
+	position: relative;
+	top: -100px;
+	height: 200px;
+	background-color: #293347;
+	width: 80%;
+	margin: auto;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.Item {
+	width: 30%;
+	padding-left: 1%;
+	padding-right: 1%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: 'Roboto', sans-serif !important;
+	flex-direction: column;
+}
+
+.Container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Roboto', sans-serif !important;
+	color: white;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+p {
+	font-weight: 100;
+}
+
+.Slogan {
+	color: white;
+	font-size: 28px;
+	font-weight: 100;
+}
+
+.SVGs {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+}
+
+.SVG {
+	cursor: pointer;
+	margin-left: 20px;
+}

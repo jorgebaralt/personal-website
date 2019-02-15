@@ -5,7 +5,7 @@ const courses = [
 		instructor: 'Tim Bushalka',
 		progress: 'Completed - 100%',
 		image:
-			'https://udemy-images.udemy.com/course/240x135/919872_ed54_6.jpg',
+			'https://udemy-images.udemy.com/course/750x422/919872_ed54_6.jpg',
 		description:
 			' Learned android basics and framework * Reviewed java programming * Reviewed databases and web services * Retrofit to connect to API',
 	},
@@ -15,7 +15,7 @@ const courses = [
 		instructor: 'Colt Steele',
 		progress: 'Completed - 100%',
 		image:
-			'https://udemy-images.udemy.com/course/240x135/625204_436a_2.jpg',
+			'https://udemy-images.udemy.com/course/480x270/625204_436a_2.jpg',
 		description:
 			' Learned web development basics (HTML/JS/CSS) * Full stack application using Node.js,Express, MongoDB, and Semantic UI* Created Node modules from scratch',
 	},
@@ -25,7 +25,7 @@ const courses = [
 		instructor: 'Stephen Grider',
 		progress: 'Completed - 100%',
 		image:
-			'https://udemy-images.udemy.com/course/240x135/705264_caa9_3.jpg',
+			'https://udemy-images.udemy.com/course/750x422/1172996_0241_5.jpg',
 		description:
 			'Became fluent with React, NPM, Webpack, Babel,ES6 and JSX * Confidence where to use Component state vs app state * Deep Redux learning using Middlewares * Hooks and Context',
 	},
@@ -34,7 +34,7 @@ const courses = [
 		name: 'iOS 10 & Swift 3',
 		instructor: 'Mark Price',
 		progress: ' Completed - 100%',
-		image: 'https://udemy-images.udemy.com/course/240x135/892102_963b.jpg',
+		image: 'https://udemy-images.udemy.com/course/750x422/892102_963b.jpg',
 		description:
 			'Basics of iOS programming and Swift * Objective C vs Swift * Building full stack apps with Firebase * Storyboard design * MVC pattern * SwiftyJSON & Alamofire* Chamaleon framework for styling',
 	},
@@ -44,7 +44,7 @@ const courses = [
 		instructor: 'Stephen Grider',
 		progress: 'Completed - 100%',
 		image:
-			'https://udemy-images.udemy.com/course/240x135/705264_caa9_3.jpg',
+			'https://udemy-images.udemy.com/course/750x422/705264_caa9_8.jpg',
 		description:
 			'Create real-world native applications * More experience using react, redux, and middleware * Firebase Integration * Grasp difference between props and state',
 	},
@@ -54,7 +54,7 @@ const courses = [
 		instructor: 'Stephen Grider',
 		progress: 'Completed - 100%',
 		image:
-			'https://udemy-images.udemy.com/course/240x135/1172996_0241_5.jpg',
+			'https://udemy-images.udemy.com/course/750x422/959700_8bd2_9.jpg',
 		description:
 			'Learned more advance techniques for react native programming * Built projects using EXPO * Implemented Animation and Google Map integration',
 	},

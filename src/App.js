@@ -6,6 +6,7 @@ import AboutMe from './containers/AboutMe/AboutMe';
 import Skills from './containers/Skills/Skills';
 import Courses from './containers/Courses/Courses';
 import Projects from './containers/Projects/Projects';
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
 	render() {
@@ -16,6 +17,7 @@ class App extends Component {
 				<Skills />
 				<Courses />
 				<Projects />
+				<Footer />
 			</Layout>
 		);
 	}
