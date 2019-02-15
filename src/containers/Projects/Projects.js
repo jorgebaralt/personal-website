@@ -11,7 +11,7 @@ import { Youtube, PlayStore, AppStore, Github } from '../../assets/SVG';
 const renderProjects = () => {
 	return projects.map((project) => {
 		return (
-			<div className={classes.Project}>
+			<div key={project.name} className={classes.Project}>
 				<CardFade
 					front={
 						<div className={classes.Front}>

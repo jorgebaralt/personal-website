@@ -3,6 +3,7 @@ import React from 'react';
 export const DownArrow = (props) => {
 	return (
 		<svg
+			{...props}
 			viewBox="0 0 129 129"
 			className={props.className}
 			style={props.style}

@@ -6,7 +6,6 @@ import classes from './Layout.module.css';
 // JSX
 import Navbar from '../../containers/Navbar/Navbar';
 import ParallaxImage from '../../components/ParallaxImage/ParallaxImage';
-import Footer from '../../components/Footer/Footer';
 //assets
 import Background from '../../assets/profile-background.jpeg';
 import { DownArrow } from '../../assets/SVG';
@@ -27,6 +26,11 @@ const Layout = (props) => {
 						className={classes.FlashArrow}
 						size="60px"
 						style={{ marginTop: '10vh' }}
+						onClick={() =>
+							document
+								.getElementById('profile')
+								.scrollIntoView({ behavior: 'smooth' })
+						}
 					/>
 				</>
 			</ParallaxImage>

@@ -15,6 +15,7 @@
 
 .FlashArrow {
 	animation: blinker 2s linear infinite;
+	cursor: pointer;
 }
 
 @keyframes blinker {
