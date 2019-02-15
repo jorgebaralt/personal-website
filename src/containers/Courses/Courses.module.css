@@ -96,3 +96,17 @@ p {
 	width: 100%;
 	background-color: #e0e0e0;
 }
+
+@media only screen and (max-width: 1189px) {
+	.Course {
+		width: 48%;
+		padding: 1%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.Course {
+		width: 98%;
+		padding: 1%;
+	}
+}

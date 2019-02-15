@@ -6,7 +6,7 @@ const Projects = () => {
 	return (
 		<div className={classes.AboutMeContainer}>
 			<h1 className={classes.Title}>Hello Everyone, Nice meeting you!</h1>
-			<Typing speed={2} cursorClassName="cursor">
+			<Typing speed={1} cursorClassName="cursor">
 				<p className={classes.Text}>
 					I started my journey as a software developer around 5 years
 					ago. I have a degree in Computer Science from University of

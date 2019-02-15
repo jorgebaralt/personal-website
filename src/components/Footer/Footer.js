@@ -11,7 +11,7 @@ const Footer = () => {
 					<h1>Interested?</h1>
 				</div>
 				<div className={classes.Item}>
-					<p>
+					<p style={{ paddingLeft: 20, paddingRight: 20 }}>
 						Feel free to contact me to discuss about any partnership
 						or investment opportunities
 					</p>

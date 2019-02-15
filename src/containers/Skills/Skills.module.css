@@ -63,3 +63,12 @@
 	font-weight: 100;
 	margin-top: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+	.Skill {
+		width: 100%;
+	}
+	.Skill:not(:last-child) {
+		border-bottom: 0.5px solid #e0e0e0;
+	}
+}

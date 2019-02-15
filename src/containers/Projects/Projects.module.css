@@ -100,3 +100,11 @@
 	margin-left: 10px;
 	cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+	.Project {
+		width: 98%;
+		text-align: center;
+		padding: 1.5%;
+	}
+}
