@@ -1,6 +1,5 @@
 .AboutMeContainer {
 	background-image: linear-gradient(to bottom, #1565c0, #2196f3);
-	/* linear-gradient(#0d47a1, black); */
 	margin: 0;
 	color: white;
 	min-height: 500px;
@@ -34,6 +33,9 @@
 
 @media only screen and (max-width: 768px) {
 	.AboutMeContainer {
-		min-height: 1000px;
+		height: 800px;
+	}
+	.Text {
+		font-size: 18px;
 	}
 }

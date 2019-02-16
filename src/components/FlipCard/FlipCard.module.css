@@ -3,8 +3,7 @@
 	perspective: 1000px;
 }
 /* flip the pane when hovered */
-.FlipContainer:hover .Flipper,
-.FlipContainer.hover .Flipper {
+.FlipContainer:hover .Flipper {
 	transform: rotateY(180deg);
 }
 

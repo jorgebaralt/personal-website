@@ -31,7 +31,6 @@ const renderProjects = () => {
 							<p style={{ width: '80%' }}>
 								{project.description}
 							</p>
-
 							{project.website ? (
 								<Button
 									color="primary"
@@ -41,7 +40,7 @@ const renderProjects = () => {
 									}
 								>
 									<p>
-										Website{' '}
+										Website
 										<i
 											style={{ marginLeft: 10 }}
 											className="fas fa-angle-right"

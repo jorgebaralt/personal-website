@@ -10,7 +10,7 @@ const Projects = () => {
 				<p className={classes.Text}>
 					I started my journey as a software developer around 5 years
 					ago. I have a degree in Computer Science from University of
-					Central florida. I love what I do, and spend a lot of time
+					Central Florida. I love what I do, and spend a lot of time
 					doing it. I enjoy working on personal and enterprise
 					projects. Currently mobile developer at Deloitte Digital.
 					Always looking forward to new opportunities and learn as

@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import classes from './CardFade.module.css';
 
 const CardFade = (props) => {
+	if (!props.front || !props.back) {
+		return null;
+	}
 	const [isHover, setHover] = useState(false);
 
 	const backClass = [classes.Content];
 	const frontClass = [classes.Content];
+
 	if (isHover) {
 		backClass.push(classes.Visible);
 		frontClass.push(classes.NotVisible);
@@ -16,21 +20,24 @@ const CardFade = (props) => {
 
 	return (
 		<div
-			className={classes.Card}
+			style={props.style}
+			className={[classes.Card, props.className].join(' ')}
 			onMouseEnter={() => {
 				setHover(true);
 			}}
 			onMouseLeave={() => {
 				setHover(false);
 			}}
+			onFocus={() => {
+				setHover(true);
+			}}
+			onBlur={() => {
+				setHover(false);
+			}}
+			style={props.style}
 		>
 			{/* Front */}
-			<div
-				className={frontClass.join(' ')}
-				// style={{ backgroundImage: `url(${props.frontImg})` }}
-			>
-				{props.front}
-			</div>
+			<div className={frontClass.join(' ')}>{props.front}</div>
 			{/* Back */}
 			<div className={backClass.join(' ')}>{props.back}</div>
 		</div>
