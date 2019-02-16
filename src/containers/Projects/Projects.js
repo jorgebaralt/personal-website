@@ -51,6 +51,7 @@ const renderProjects = () => {
 							<div className={classes.Resources}>
 								{project.ios ? (
 									<AppStore
+										size={30}
 										onClick={() =>
 											window.open(project.ios, '_blank')
 										}
@@ -59,6 +60,7 @@ const renderProjects = () => {
 								) : null}
 								{project.android ? (
 									<PlayStore
+										size={30}
 										onClick={() =>
 											window.open(
 												project.android,
@@ -70,6 +72,7 @@ const renderProjects = () => {
 								) : null}
 								{project.youtube ? (
 									<Youtube
+										size={30}
 										onClick={() =>
 											window.open(
 												project.youtube,
@@ -81,6 +84,7 @@ const renderProjects = () => {
 								) : null}
 								{project.github ? (
 									<Github
+										size={30}
 										onClick={() =>
 											window.open(
 												project.github,
