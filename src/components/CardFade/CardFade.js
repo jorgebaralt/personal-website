@@ -20,8 +20,8 @@ const CardFade = (props) => {
 
 	return (
 		<div
-			style={props.style}
 			className={[classes.Card, props.className].join(' ')}
+			style={props.style}
 			onMouseEnter={() => {
 				setHover(true);
 			}}
@@ -34,7 +34,6 @@ const CardFade = (props) => {
 			onBlur={() => {
 				setHover(false);
 			}}
-			style={props.style}
 		>
 			{/* Front */}
 			<div className={frontClass.join(' ')}>{props.front}</div>
