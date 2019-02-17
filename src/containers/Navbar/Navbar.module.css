@@ -21,12 +21,13 @@
 	overflow: hidden;
 	padding-left: 20px;
 	padding-right: 20px;
-	transition: background-color 0.25s;
+	transition: background-color 0.5s;
 }
 
 .RegularNavbar {
 	background-color: #293347;
-	transition: background-color 0.25s;
+	transition: background-color 0.5s;
+	position: fixed;
 }
 
 .NavbarItemsTransparent a {
@@ -57,13 +58,18 @@
 	border-bottom-right-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	transition: all 0.25s;
+	transition: all 0.5s;
 }
 
 .ShowDropdown {
-	height: 150px;
+	height: 100vh;
 	background-color: #293347;
-	transition: all 0.25s;
+	height: 100%;
+	width: 100%;
+	z-index: 10000;
+	position: fixed;
+	top: 70px;
+	transition: all 0.5s;
 }
 
 .DropdownItem {
@@ -78,10 +84,11 @@
 	border-bottom: 2px solid transparent;
 	transition: border-bottom 0.15s;
 	cursor: pointer;
-	margin-bottom: 10px;
-	width: 25%;
+	margin-top: 40px;
+	width: 40%;
 	align-self: center;
 	transition: all 0.1s;
+	text-transform: uppercase;
 }
 
 .DropdownItem:last-child {

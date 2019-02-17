@@ -19,9 +19,9 @@ const Navbar = (props) => {
 		dropdownItemClass.push(classes.ShowDropdownItem);
 	}
 	// in case we want the navbar sticky (stay on top)
-	if (scrollY > 400) {
-		navbarClass.push(classes.RegularNavbar);
-	}
+	// if (scrollY > 400) {
+	// 	navbarClass.push(classes.RegularNavbar);
+	// }
 
 	return (
 		<header className={classes.Header}>
@@ -91,41 +91,45 @@ const Navbar = (props) => {
 			<div className={drawerClass.join(' ')}>
 				<a
 					className={dropdownItemClass.join(' ')}
-					onClick={() =>
+					onClick={() => {
+						setDrawerOpen(false);
 						document
 							.getElementById('profile')
-							.scrollIntoView({ behavior: 'smooth' })
-					}
+							.scrollIntoView({ behavior: 'smooth' });
+					}}
 				>
 					Profile
 				</a>
 				<a
 					className={dropdownItemClass.join(' ')}
-					onClick={() =>
+					onClick={() => {
+						setDrawerOpen(false);
 						document
 							.getElementById('skills')
-							.scrollIntoView({ behavior: 'smooth' })
-					}
+							.scrollIntoView({ behavior: 'smooth' });
+					}}
 				>
 					Skills
 				</a>
 				<a
 					className={dropdownItemClass.join(' ')}
-					onClick={() =>
+					onClick={() => {
+						setDrawerOpen(false);
 						document
 							.getElementById('courses')
-							.scrollIntoView({ behavior: 'smooth' })
-					}
+							.scrollIntoView({ behavior: 'smooth' });
+					}}
 				>
 					Courses
 				</a>
 				<a
 					className={dropdownItemClass.join(' ')}
-					onClick={() =>
+					onClick={() => {
+						setDrawerOpen(false);
 						document
 							.getElementById('projects')
-							.scrollIntoView({ behavior: 'smooth' })
-					}
+							.scrollIntoView({ behavior: 'smooth' });
+					}}
 				>
 					Projects
 				</a>

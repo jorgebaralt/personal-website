@@ -3,6 +3,7 @@ import React from 'react';
 export const Linkedin = (props) => {
 	return (
 		<svg
+			{...props}
 			viewBox="0 0 112.196 112.196"
 			className={props.className}
 			style={props.style}
