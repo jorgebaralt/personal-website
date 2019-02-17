@@ -42,8 +42,27 @@ const Footer = () => {
 					Coding, Learning, and Improving
 				</p>
 				<div className={classes.SVGs}>
-					<Github size={40} className={classes.SVG} />
-					<Linkedin size={40} className={classes.SVG} />
+					<Github
+						size={40}
+						onClick={() =>
+							window.open(
+								'https://github.com/jorgebaralt',
+								'_blank'
+							)
+						}
+						className={classes.SVG}
+					/>
+
+					<Linkedin
+						onClick={() =>
+							window.open(
+								'https://www.linkedin.com/in/jorgebaralt/',
+								'_blank'
+							)
+						}
+						size={40}
+						className={classes.SVG}
+					/>
 					<Email
 						className={classes.SVG}
 						onClick={() =>
