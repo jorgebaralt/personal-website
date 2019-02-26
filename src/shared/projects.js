@@ -2,6 +2,7 @@ import KnightImage from '../assets/knightgo.jpeg';
 import ServifyImage from '../assets/servify.jpeg';
 import OffCourtImage from '../assets/offcoart.jpeg';
 import TireOutletImage from '../assets/tireoutlet.jpeg';
+import ChatDemo from '../assets/chat.jpeg';
 
 const projects = [
 	{
@@ -37,6 +38,13 @@ const projects = [
 		image: TireOutletImage,
 		github: 'https://github.com/jorgebaralt/tire-outlet',
 		website: 'https://www.tireoutletautorepair.com',
+	},
+	{
+		name: 'Chat Demo',
+		description:
+			'Built a front end chat demo using React Native. Basic functionality of a chat, grouping messages, showing images and more',
+		image: ChatDemo,
+		github: 'https://github.com/jorgebaralt/messaging-demo',
 	},
 ];
 

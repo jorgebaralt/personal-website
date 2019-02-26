@@ -90,6 +90,7 @@
 	align-self: center;
 	transition: all 0.1s;
 	text-transform: uppercase;
+	visibility: hidden;
 }
 
 .DropdownItem:last-child {
@@ -102,5 +103,6 @@
 
 .ShowDropdownItem {
 	opacity: 1;
+	visibility: visible;
 	transition: all 0.25s;
 }
