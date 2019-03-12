@@ -11,12 +11,12 @@ import useGetWindowData from '../hooks/useGetWindowData';
 
 const Context = React.createContext();
 
+//used to wrap parent component and all children then can use the context
 export const WindowDataStore = (props) => {
 	// check if the device is a mobile phone, to apply pollyfil
 	const isMobile = useIsMobile();
 	// get the size of the screen
 	const { width, height, scrollY } = useGetWindowData();
-
 	//return context
 	return (
 		<Context.Provider value={{ isMobile, width, height, scrollY }}>
