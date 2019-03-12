@@ -11,12 +11,14 @@ const Navbar = (props) => {
 
 	//styling
 	const drawerClass = [classes.Dropdown];
-	const navbarClass = [classes.TransparentNavbar];
+	let navbarClass = [];
 	const dropdownItemClass = [classes.DropdownItem];
 	if (drawerOpen) {
 		drawerClass.push(classes.ShowDropdown);
 		navbarClass.push(classes.RegularNavbar);
 		dropdownItemClass.push(classes.ShowDropdownItem);
+	} else {
+		navbarClass = [classes.TransparentNavbar];
 	}
 	// in case we want the navbar sticky (stay on top)
 	// if (scrollY > 400) {
