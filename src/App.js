@@ -9,6 +9,9 @@ import Projects from './containers/Projects/Projects';
 import Footer from './components/Footer/Footer';
 
 class App extends Component {
+	componentDidMount() {
+		document.body.style.overflowX = 'hidden';
+	}
 	render() {
 		return (
 			<Layout>

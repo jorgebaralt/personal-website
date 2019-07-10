@@ -5,7 +5,9 @@ import Typing from 'react-typing-animation';
 const Projects = () => {
 	return (
 		<div className={classes.AboutMeContainer}>
-			<h1 className={classes.Title}>Hello Everyone, Nice meeting you!</h1>
+			<h1 className={classes.Title}>
+				Hello Everyone ✋, Nice meeting you!
+			</h1>
 			<Typing speed={1} cursorClassName="cursor">
 				<p className={classes.Text}>
 					I started my journey as a software developer around 5 years

@@ -106,7 +106,7 @@ const Projects = () => {
 	return (
 		<div id="projects">
 			<div className={classes.Container}>
-				<h1 className={classes.Title}>My Projects</h1>
+				<h1 className={classes.Title}>My Projects 💭</h1>
 				<p className={classes.Text}>
 					During my degree, I was part of many team projects. I have
 					also worked on personal projects on my free time. Have been
