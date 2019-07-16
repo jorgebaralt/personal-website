@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 const App = lazy(
 	() =>
 		new Promise((resolve, reject) => {
-			setTimeout(() => resolve(import('./App')), 1000);
+			setTimeout(() => resolve(import('./App')), 750);
 		})
 );
 // react router dom

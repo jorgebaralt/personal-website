@@ -15,7 +15,7 @@ const Profile = () => {
 			</h6>
 			<img className={classes.ProfilePic} src={ProfilePic} alt="profile pic" />
 
-			<HookedParallax multiplierY={1} style={{ position: 'absolute', bottom: 0, left: 100 }}>
+			<HookedParallax multiplierY={1.5} style={{ position: 'absolute', bottom: 0, left: 100 }}>
 				<div
 					style={{
 						height: 150,
@@ -29,7 +29,7 @@ const Profile = () => {
 					<Home size={40} />
 				</div>
 			</HookedParallax>
-			<HookedParallax multiplierY={1} style={{ position: 'absolute', bottom: -60, left: 200 }}>
+			<HookedParallax multiplierY={1.5} style={{ position: 'absolute', bottom: -60, left: 200 }}>
 				<div
 					style={{
 						height: 130,
@@ -41,7 +41,7 @@ const Profile = () => {
 					}}
 				/>
 			</HookedParallax>
-			<HookedParallax multiplierY={1} style={{ position: 'absolute', bottom: -100, left: 120 }}>
+			<HookedParallax multiplierY={1.5} style={{ position: 'absolute', bottom: -100, left: 120 }}>
 				<div
 					style={{
 						height: 100,
