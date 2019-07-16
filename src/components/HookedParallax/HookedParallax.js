@@ -21,10 +21,7 @@ const HookedParallax = (props) => {
 	}, [divRef]);
 
 	return (
-		<div
-			ref={divRef}
-			style={{ ...style, transform: `translateY(${translateYVal}px)` }}
-		>
+		<div ref={divRef} style={{ ...style, transform: `translateY(${translateYVal}px)` }}>
 			{children}
 		</div>
 	);

@@ -10,3 +10,5 @@ export * from './Github';
 export * from './AppStore';
 export * from './PlayStore';
 export * from './Email';
+export * from './Home';
+export * from './Loading';
