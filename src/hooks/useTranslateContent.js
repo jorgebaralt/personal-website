@@ -18,13 +18,6 @@ export const useTranslateContent = (multipliersY, { startingY, componentHeight }
 
 			const relativeY =
 				scrollY + innerHeight - startingY - componentOffsetMultiplier * (componentHeight / 2);
-
-			console.log('scrollY', scrollY);
-			console.log('inerrh', innerHeight);
-			console.log('startingY	', startingY);
-			console.log('compoentOffmult	', componentOffsetMultiplier);
-			console.log(relativeY);
-
 			const calculation = relativeY * -multipliersY;
 
 			setTranslateYVal(calculation);

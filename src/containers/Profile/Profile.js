@@ -1,8 +1,10 @@
 import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 //css
 import classes from './Profile.module.css';
 import ProfilePic from '../../assets/profile.png';
-import { Code, Home, Loading } from '../../assets/SVG';
+import { Code, Home } from '../../assets/SVG';
 import HookedParallax from '../../components/HookedParallax/HookedParallax';
 
 const Profile = () => {

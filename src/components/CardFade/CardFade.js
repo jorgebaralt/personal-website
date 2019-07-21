@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import classes from './CardFade.module.css';
 
 const CardFade = (props) => {
+	const [isHover, setHover] = useState(false);
+
 	if (!props.front || !props.back) {
 		return null;
 	}
-	const [isHover, setHover] = useState(false);
-
 	const backClass = [classes.Content];
 	const frontClass = [classes.Content];
 

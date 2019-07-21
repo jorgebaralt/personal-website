@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useRef } from 'react';
 import classes from './Navbar.module.css';
 import WindowDataContext from '../../contexts/WindowDataContext';
 import Hamburger from '../../components/Hamburger/Hamburger';
@@ -44,37 +44,29 @@ const Navbar = (props) => {
 						{/* Use id for scrolling */}
 						<a
 							onClick={() =>
-								document
-									.getElementById('profile')
-									.scrollIntoView({ behavior: 'smooth' })
+								document.getElementById('profile').scrollIntoView({ behavior: 'smooth' })
 							}
 						>
 							Profile
 						</a>
 						<a
 							onClick={() =>
-								document
-									.getElementById('skills')
-									.scrollIntoView({ behavior: 'smooth' })
+								document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })
 							}
 						>
 							Skills
 						</a>
 						<a
 							onClick={() =>
-								document
-									.getElementById('courses')
-									.scrollIntoView({ behavior: 'smooth' })
+								document.getElementById('courses').scrollIntoView({ behavior: 'smooth' })
 							}
 						>
 							Courses
 						</a>
 						<a
-							onClick={() =>
-								document
-									.getElementById('projects')
-									.scrollIntoView({ behavior: 'smooth' })
-							}
+							onClick={() => {
+								document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
+							}}
 						>
 							Projects
 						</a>
@@ -95,9 +87,7 @@ const Navbar = (props) => {
 					className={dropdownItemClass.join(' ')}
 					onClick={() => {
 						setDrawerOpen(false);
-						document
-							.getElementById('profile')
-							.scrollIntoView({ behavior: 'smooth' });
+						document.getElementById('profile').scrollIntoView({ behavior: 'smooth' });
 					}}
 				>
 					Profile
@@ -106,9 +96,7 @@ const Navbar = (props) => {
 					className={dropdownItemClass.join(' ')}
 					onClick={() => {
 						setDrawerOpen(false);
-						document
-							.getElementById('skills')
-							.scrollIntoView({ behavior: 'smooth' });
+						document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
 					}}
 				>
 					Skills
@@ -117,9 +105,7 @@ const Navbar = (props) => {
 					className={dropdownItemClass.join(' ')}
 					onClick={() => {
 						setDrawerOpen(false);
-						document
-							.getElementById('courses')
-							.scrollIntoView({ behavior: 'smooth' });
+						document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
 					}}
 				>
 					Courses
@@ -128,9 +114,7 @@ const Navbar = (props) => {
 					className={dropdownItemClass.join(' ')}
 					onClick={() => {
 						setDrawerOpen(false);
-						document
-							.getElementById('projects')
-							.scrollIntoView({ behavior: 'smooth' });
+						document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
 					}}
 				>
 					Projects
